@@ -1,3 +1,7 @@
+---
+title: How social media changes quality of your photos
+permalink: /how-social-media-changes-quality-of-your-photos/
+---
 # Data Compression: How social media changes quality of your photos
 In a world, where smart phones have dual cameras that take high quality pictures with precision, how are those images shared instantly? We all know that higher the quality of the picture, higher is its file size. So, how do we share megabytes of data in a blink of an eye?
 Social networking apps like Facebook, WhatsApp, Hike, Hangouts, Snapchat or whatever social networking app you have in your smart phone uses a technique called data compression. Data compression is a technique that employs algorithms to reduce file size by either reducing redundancy or by selectively removing certain parts of the image that is not perceptible to our eyes or sometimes they use both. 
