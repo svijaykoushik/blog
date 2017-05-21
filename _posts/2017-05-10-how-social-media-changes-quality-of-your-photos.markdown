@@ -2,7 +2,7 @@
 layout:     post
 title: "Social media reduces quality of photos"
 subtitle:   "because they need to reduce the load time of your photos."
-date:       2014-06-10 12:00:00
+date:       2017-05-10 12:00:00
 author:     "Vijay Koushik"
 header-img: "img/post-bg-01.jpg"
 ---
