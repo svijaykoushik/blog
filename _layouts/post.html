@@ -27,6 +27,13 @@ layout: default
 
 				{{ content }}
 
+				<p>
+					<div class="fb-share-button" data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsvijaykoushik.github.io%2Fblog%2F&amp;src=sdkpreparse">Share</a></div>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<!-- Gplus share -->
+					<div class="g-plus" data-action="share"></div>
+				</p>
+				
                 <hr>
 
                 <ul class="pager">
