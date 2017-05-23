@@ -27,11 +27,11 @@ Ethernet adapter Ethernet:<br/><br/>
 </a>
 <span class="caption text-muted">An Illustration of how ads were embeded into websites</span>
 
-<p>on further reading about DNS changer malware, I learnt its working procedure. The malware exploited vulnerability in my modem. It used the default access credentials to get into my modem settings and changed the dns address to a rouge dns. I never changed the generic <em>username:admin and password:admin</em> credentials that came with the box because it was easy for me to remember. Another warning I ignored. Now that the malware changed the dns settings all my traffic to the internet were sent to a rouge dns instead of my ISP's DNS. The rouge dns was monitoring all the websites I visited, my email accounts and my passwords.</p>
+<p>On further reading about DNS changer malware, I learnt its working procedure. The malware exploited vulnerability in my modem. It used the default access credentials to get into my modem settings and changed the dns address to a rouge dns. I never changed the generic <em>username:admin and password:admin</em> credentials that came with the box because it was easy for me to remember. Another warning I ignored. Now that the malware changed the dns settings all my traffic to the internet were sent to a rouge dns instead of my ISP's DNS. The rouge dns was monitoring all the websites I visited, my email accounts and my passwords.</p>
 <p>Wikipedia says <blockquote>DNS hijacking or DNS redirection is the practice of subverting the resolution of Domain Name System (DNS) queries. This can be achieved by malware that overrides a computer's TCP/IP configuration to point at a rogue DNS server under the control of an attacker, or through modifying the behaviour of a trusted DNS server so that it does not comply with internet standards.</blockquote> In my case the rouge server read all my queries and attached a <em>script</em> that opens an advertisement pop whenever I interacted with any website I wanted to visit. Pretty cruel right? This way the hacker could earn money for the ads I was forced to visit. I had spent almost half a day trying to understand the problem and now I was desperate to find a solution to my problem.</p>
 
 <h2 class="section-heading">Opendns to the rescue</h2>
-<p>after surfing the internet for about half an hour I was suggested to do 2 things:
+<p>After surfing the internet for about half an hour I was suggested to do 2 things:
 <ol>
 <li>To change my modem's access credentials from the factory provided one.</li>
 <li>To change my dns setting in my modem from automatic to a secure static dns, either <a href="https://developers.google.com/speed/public-dns/">Google Public DNS</a> or <a href="https://www.opendns.com/">Opendns</a>.</li>
