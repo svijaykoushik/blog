@@ -10,11 +10,11 @@ header-img: "img/post_dns_hijack_header.jpg"
 <p>Two years ago on a fine morning I opened my computer to check my email. I started searching for job opportunities on Google and opened each result that Google brought up. Now, a strange thing happened! Whenever I tried to interact with a website that I opened from the results page an ad-popup opened. I thought I disabled the ad blocker plug-in, but it was enabled. I started to wonder what was going on. I then visited every webpage I used to visit and the same thing happened. Every time I clicked on an element an ad-popup opened. This frustrated me so I closed my browser and started a complete virus scan on my pc and then stared browsing on my phone. But alas! The same thing happened. This time every time I try to scroll a page on my phone it started to redirect to an advertisement. I felt something was not right and so I started to inspect on all my devices on my network the result was the same. By this time I could guess that something was wrong with my modem. Amidst this problem Google and Facebook were working fine. No irritating popups (thank god!). I fiddled around with my network configuration on my PC. I opened command prompt and typed in the command ipconfig and I noticed something unusual in the results displayed on the screen.</p>
 
 <blockquote>
-Ethernet adapter Ethernet:
+Ethernet adapter Ethernet:<br/><br/>
 
-   Connection-specific DNS Suffix  . : 
-   IPv4 Address. . . . . . . . . . . : 192.168.1.5
-   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Connection-specific DNS Suffix  . :<br/> 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.5<br/> 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0<br/> 
    Default Gateway . . . . . . . . . : 213.109.79.255
 </blockquote>
 
