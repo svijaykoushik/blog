@@ -9,11 +9,17 @@
 	 
 	 <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta property="og:description"   content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:image"         content="{{ site.url }}{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" />
+  <meta property="og:url"           		content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type"          		content="website" />
+  <meta property="og:title"         		content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description"   		content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image:secure_url"      content="{{ site.url }}{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" />
+  <meta property="og:image:width"         	content="1418" />
+  <meta property="og:image:height"         	content="742" />
+  <meta name="twitter:card" 				content="summary_large_image">
+  <meta name="twitter:title" 				content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" 			content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" 				content="{{ site.url }}{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
