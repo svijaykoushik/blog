@@ -4,7 +4,9 @@ title: "Social media reduces quality of photos"
 subtitle:   "because they need to reduce the load time of your photos."
 date:       2017-05-10 12:00:00
 author:     "Vijay Koushik"
+keywords:   "data compression, social media, image quality, svijaykoushik, blog, topic of interest"
 header-img: "img/post-bg-01.jpg"
+og_type: 	"article"
 ---
 <h1>Data Compression: How social media changes quality of your photos</h1>
 <p>In a world, where smart phones have dual cameras that take high quality pictures with precision, how are those images shared instantly? We all know that higher the quality of the picture, higher is its file size. So, how do we share megabytes of data in a blink of an eye?</p>

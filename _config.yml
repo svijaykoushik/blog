@@ -3,7 +3,8 @@ title: "Vijaykoushik's blogs"
 header-img: img/home-bg.jpg
 email: svijaykoushik@hotmail.com
 copyright_name: Vijaykoushik
-description: "A place where I share my personal experience with computers and technology"
+description: "My experiences with computers, the problems I faced and the fun I had with them and sometimes the topics that interest me find a place in this blog"
+keywords: "Computers, electronics, personal experiences, technology, blog"
 baseurl: "/blog"
 url: "https://svijaykoushik.github.io"
 github_username:  svijaykoushik
@@ -21,3 +22,6 @@ paginate: 5
 exclude: ["less","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
+
+# og settings
+og_type: website
