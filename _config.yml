@@ -11,8 +11,9 @@ github_username:  svijaykoushik
 facebook_username:  svijaykoushik
 instagram_username: svijaykoushik
 email_username:  svijaykoushik@hotmail.com
+site_author: "Vijay Koushik"
 # Google Analytics
-google_analytics: UA-50702630-4
+google_tracking_id: UA-50702630-4
 
 # Build settings
 markdown: kramdown
@@ -25,3 +26,7 @@ gems: [jekyll-paginate, jekyll-feed, jekyll-sitemap]
 
 # og settings
 og_type: website
+
+#Webmaster settings
+google_site_verification: "mhd6MlbydXT7Gl524E0vQuvzfAEbkwphmNjN_AfI0EM"
+bing_msvalidate: "A953EBBC10969DE86619DB2BD101AC17"
