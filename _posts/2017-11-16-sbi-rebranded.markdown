@@ -5,9 +5,11 @@ subtitle: 		"With SBI's new rebranded webiste, customers can be secured from phi
 description:	"Leaving factory access credentials of routers unchanged can open the back door to DNS hijacking"
 date:			2017-11-16 21:30:00
 author: 		"Vijay Koushik"
-keywords:   	"SBI, gTLD, generic Top Level Domain, phishing, svijaykoushik, blog, topic of interest"
+keywords:   	"SBI, gTLD, generic Top Level Domain, phishing, svijaykoushik, blog, topic of interest, SBI website rebranding"
 header-img: 	"img/post-header-bank-phising.jpg"
 og_type: 		"article"
+comments:       true
+pageId:         "2017-11-16-sbi-rebranded"
 ---
 <div class="alert alert-info">
   <strong>Note to Readers</strong> This article was written as early as May 2017. I couldn't find time to publish it early. Please keep in mind that this is based on an event that occured on 20 Feb 2017.
