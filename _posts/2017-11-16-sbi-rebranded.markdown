@@ -3,12 +3,16 @@ layout:   		post
 title:    		"Security"
 subtitle: 		"With SBI's new rebranded webiste, customers can be secured from phishing scams"
 description:	"Leaving factory access credentials of routers unchanged can open the back door to DNS hijacking"
-date:			2017-05-23 20:39:00
+date:			2017-11-16 21:30:00
 author: 		"Vijay Koushik"
 keywords:   	"SBI, gTLD, generic Top Level Domain, phishing, svijaykoushik, blog, topic of interest"
 header-img: 	"img/post-header-bank-phising.jpg"
 og_type: 		"article"
 ---
+<div class="alert alert-info">
+  <strong>Note to Readers</strong> This article was written as early as May 2017. I couldn't find time to publish it early. Please keep in mind that this is based on an event that occured on 20 Feb 2017.
+</div>
+
 <p>Though we cursed it's changes in policies relating to savings banks account, India's biggest public sector bank State Bank Of India has given its website a new avatar to protect its customers from phishing scams.<br/>Yes, I'm talking about the recent news about <abbr title="State Bank of India">SBI</abbr> rebranding its website with its own highest domain protocol known as the generic Top Level Domain (gTLD) to <code>https://www.bank.sbi</code> from <code>https://www.sbi.co.in</code>. <abbr title="State Bank of India">SBI</abbr> is the first banking company to have its own <abbr title="generic Top Level Domain">gTLD</abbr>.</p>
 
 <p>What is a <abbr title="generic Top Level Domain">gTLD</abbr>? and What does it have to do with protection against phishing? Well, a gTLD is the last label of a fully qualified domain name. A fully qualified domain name is the complete address of a website like <code>www.google.com</code> or <code>www.wikipedia.org</code>. The labels <q>.com</q> and <q>.org</q> are the top level domains. These top level domains are called generic for historic reasons to differentiate different domains that existed during the development of internet. But hold on a second! If they are called top level domains then why are they at the last? The reason is, the Domain Name System or <abbr title="Domain Name System">DNS</abbr> in short, the directory service responsible for identifying the correct website corresponding to a particular domain name organises the domain names from right to left in a hierarchical order. Thus the label in the far right goes in the top of the hierarchy and the label in the far left goes in the bottom of the hierarchy.</p>
