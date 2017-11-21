@@ -5,11 +5,12 @@ subtitle: 		"With SBI's new rebranded webiste, customers can be secured from phi
 description:	"This is not just a rebranding. There is more than it meets the eye"
 date:			2017-11-16 21:30:00
 author: 		"Vijay Koushik"
-keywords:   	"SBI, gTLD, generic Top Level Domain, phishing, svijaykoushik, blog, topic of interest, SBI website rebranding"
+keywords:   	"SBI, gTLD, generic Top Level Domain, phishing"
 header-img: 	"img/post-header-bank-phising.jpg"
 og_type: 		"article"
 comments:       true
 pageId:         "2017-11-16-sbi-rebranded"
+tags:			["SBI, gTLD, generic Top Level Domain, phishing"]
 ---
 <div class="alert alert-info">
   <strong>Note to Readers</strong> This article was written as early as May 2017. I couldn't find time to publish it early. Please keep in mind that this is based on an event that occured on 20 Feb 2017.
@@ -32,15 +33,14 @@ The traditional phishing involves the scammer sending an email informing that th
 
 <p>Since the gTLD <em>sbi</em> is restricted only to sbi, one can easily differentiate between fraudent and the original websites and e-mails because the official email addresses and website will end with <em><q>.sbi</q></em>. So far only the bank's website has this new gTLD and the bank's officials have announced that other businesses of <abbr title="State Bank of India">SBI</abbr> like insurance will get their own gTLD. The officials also said that the bank's previous web address <code>www.sbi.co.in</code> continue to exist as long as the customers get accustomed to the new web address <code>www.bank.sbi</code>.</p>
 <h3>FYI on gTLDs</h3>
-<p>
-	|Domain	|Intended use																				|
+	<!--|Domain	|Intended use																				|
 	|-------|-------------------------------------------------------------------------------------------|
 	|com	|Mainly for commercial entities, but unrestricted											|
 	|org	|Originally for organizations not clearly falling within the other gTLDs, now unrestricted	|
 	|edu	|Educational use, but now primarily for US third level colleges and universities			|
 	|gov	|Governmental use, but now primarily for US governmental entities and agencies				|
-	|mil	|Military use, but now primarily for US military only										|
-	<!--<table>
+	|mil	|Military use, but now primarily for US military only										|-->
+	<table class="table">
 		<thead>
 			<tr>
 				<th>Domain</th>
@@ -69,8 +69,7 @@ The traditional phishing involves the scammer sending an email informing that th
 				<td>Military use, but now primarily for US military only</td>
 			<tr>
 		</tbody>
-	</table>-->
-</p>
+	</table>
 <p>
 <a href="https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#ICANN-era_generic_top-level_domains" target="_blank">Complete list of gTLDs <i class="fa fa-external-link"></i></a> from Wikipedia.</p>
 <h3>Glossary</h3>
