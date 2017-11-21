@@ -34,7 +34,6 @@ The traditional phishing involves the scammer sending an email informing that th
 <h3>FYI on gTLDs</h3>
 <p>
 	<table>
-		<caption>Historical Generic TLDs</caption>
 		<tr>
 			<th>Domain</th>
 			<th>Intended use</th>
