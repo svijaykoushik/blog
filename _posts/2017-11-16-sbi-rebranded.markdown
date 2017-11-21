@@ -13,7 +13,7 @@ pageId:         "2017-11-16-sbi-rebranded"
 tags:			["SBI, gTLD, generic Top Level Domain, phishing"]
 ---
 <div class="alert alert-info">
-  <strong>Note to Readers</strong> This article was written as early as May 2017. I couldn't find time to publish it early. Please keep in mind that this is based on an event that occured on 20 Feb 2017.
+  <strong><i class="fa fa-info-circle"></i> Note to Readers:</strong> This article was written as early as May 2017. I couldn't find time to publish it early. Please keep in mind that this is based on an event that occured on 20 Feb 2017.
 </div>
 
 <p>Though we cursed it's changes in policies relating to savings banks account, India's biggest public sector bank State Bank Of India has given its website a new avatar to protect its customers from phishing scams.<br/>Yes, I'm talking about the recent news about <abbr title="State Bank of India">SBI</abbr> rebranding its website with its own highest domain protocol known as the generic Top Level Domain (gTLD) to <code>https://www.bank.sbi</code> from <code>https://www.sbi.co.in</code>. <abbr title="State Bank of India">SBI</abbr> is the first banking company to have its own <abbr title="generic Top Level Domain">gTLD</abbr>.</p>
