@@ -34,7 +34,7 @@ The traditional phishing involves the scammer sending an email informing that th
 <h3>FYI on gTLDs</h3>
 <p>
 	|Domain	|Intended use																				|
-	|-------|------------																				|
+	|-------|-------------------------------------------------------------------------------------------|
 	|com	|Mainly for commercial entities, but unrestricted											|
 	|org	|Originally for organizations not clearly falling within the other gTLDs, now unrestricted	|
 	|edu	|Educational use, but now primarily for US third level colleges and universities			|
