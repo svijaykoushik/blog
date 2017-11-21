@@ -10,7 +10,7 @@ header-img: 	"img/post-header-bank-phising.jpg"
 og_type: 		"article"
 comments:       true
 pageId:         "2017-11-16-sbi-rebranded"
-tags:			["SBI, gTLD, generic Top Level Domain, phishing"]
+tags:			["SBI", "gTLD", "generic Top Level Domain", "phishing"]
 ---
 <div class="alert alert-info">
   <strong><i class="fa fa-info-circle"></i> Note to Readers:</strong> This article was written as early as May 2017. I couldn't find time to publish it early. Please keep in mind that this is based on an event that occured on 20 Feb 2017.
