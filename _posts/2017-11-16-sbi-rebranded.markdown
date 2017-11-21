@@ -34,30 +34,34 @@ The traditional phishing involves the scammer sending an email informing that th
 <h3>FYI on gTLDs</h3>
 <p>
 	<table>
-		<tr>
-			<th>Domain</th>
-			<th>Intended use</th>
-		<tr>
-		<tr>
-			<td>com</td>
-			<td>Mainly for commercial entities, but unrestricted</td>
-		<tr>
-		<tr>
-			<td>org</td>
-			<td>Originally for organizations not clearly falling within the other gTLDs, now unrestricted</td>
-		<tr>
-		<tr>
-			<td>edu</td>
-			<td>Educational use, but now primarily for US third level colleges and universities</td>
-		<tr>
-		<tr>
-			<td>gov</td>
-			<td>Governmental use, but now primarily for US governmental entities and agencies</td>
-		<tr>
-		<tr>
-			<td>mil</td>
-			<td>Military use, but now primarily for US military only</td>
-		<tr>
+		<thead>
+			<tr>
+				<th>Domain</th>
+				<th>Intended use</th>
+			<tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>com</td>
+				<td>Mainly for commercial entities, but unrestricted</td>
+			<tr>
+			<tr>
+				<td>org</td>
+				<td>Originally for organizations not clearly falling within the other gTLDs, now unrestricted</td>
+			<tr>
+			<tr>
+				<td>edu</td>
+				<td>Educational use, but now primarily for US third level colleges and universities</td>
+			<tr>
+			<tr>
+				<td>gov</td>
+				<td>Governmental use, but now primarily for US governmental entities and agencies</td>
+			<tr>
+			<tr>
+				<td>mil</td>
+				<td>Military use, but now primarily for US military only</td>
+			<tr>
+		</tbody>
 	</table>
 </p>
 <p>
