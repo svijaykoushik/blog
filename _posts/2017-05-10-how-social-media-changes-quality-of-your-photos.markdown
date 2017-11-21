@@ -9,6 +9,7 @@ header-img: "img/post-bg-01.jpg"
 og_type: 	"article"
 comments:   true
 pageId:     "2017-05-10-how-social-media-changes-quality-of-your-photos"
+tags:       ["data-compression", "socia-lmedia", "image-quality", "topic-of-interest"]
 ---
 <h1>Data Compression: How social media changes quality of your photos</h1>
 <p>In a world, where smart phones have dual cameras that take high quality pictures with precision, how are those images shared instantly? We all know that higher the quality of the picture, higher is its file size. So, how do we share megabytes of data in a blink of an eye?</p>
