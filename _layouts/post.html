@@ -21,16 +21,7 @@ layout: default
 
 <!-- Post Content -->
 <article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {% if page.tags %}
-                    {% for tag in page.tags %}
-                    <span class="label label-default">#{{ tag }}</span>
-                    {% endfor %}
-                {% endif %}
-            </div>
-        </div>        
+    <div class="container">       
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
@@ -71,5 +62,15 @@ layout: default
         {% endif %}
     </div>
 </article>
-
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% if page.tags %}
+                {% for tag in page.tags %}
+                <span class="label label-default">#{{ tag }}</span>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div> 
+</div>
 <hr>
