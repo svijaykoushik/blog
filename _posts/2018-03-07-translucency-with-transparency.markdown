@@ -45,12 +45,13 @@ Hey guys! So Windows 10 has been around for 2 years now with its attractive (it 
 <p>It's awesome na? Did you like it? Don’t forget to share what you think about this post in the comments.<br/>
 Header Photo by Tim Gouw from <a href="https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/">Pexels</a></p>
 <hr/>
+<h3>Footnotes</h3>
 <p id ="fn">
-<sup>[1]</sup> Use of Transparency in Website Design, Examples - https://designmodo.com/transparency-website-design/
-<sup>[2]</sup> Acrylic material - https://docs.microsoft.com/en-us/windows/uwp/design/style/acrylic
-<sup>[3]</sup> Fluent design system - https://en.wikipedia.org/wiki/Fluent_Design_System
-<sup>[4]</sup> CSS blur filter - https://developer.mozilla.org/en-US/docs/Web/CSS/filter
-<sup>[5]</sup> CSS Opacity property - https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
-<sup>[6]</sup> Background-blend-mode property - https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+<sup>[1]</sup> Use of Transparency in Website Design, Examples - https://designmodo.com/transparency-website-design/<br/>
+<sup>[2]</sup> Acrylic material - https://docs.microsoft.com/en-us/windows/uwp/design/style/acrylic<br/>
+<sup>[3]</sup> Fluent design system - https://en.wikipedia.org/wiki/Fluent_Design_System<br/>
+<sup>[4]</sup> CSS blur filter - https://developer.mozilla.org/en-US/docs/Web/CSS/filter<br/>
+<sup>[5]</sup> CSS Opacity property - https://developer.mozilla.org/en-US/docs/Web/CSS/opacity<br/>
+<sup>[6]</sup> Background-blend-mode property - https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode<br/>
 <sup>[7]</sup> CSS pseudo elements - https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-elements
 </p>
