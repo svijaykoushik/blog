@@ -62,5 +62,6 @@ The search engine also has the feature to search within the image i.e. a part of
 <span class="caption text-muted">Executing a code sample of bubble sort method of sorting a list.</span>
 </p>
 <p>As said in the beginning, I did not completely switch to Bing. It’s not perfect; I tend to use Google If I’m not satisfied with the results. These reasons stated here are based on my personal preferences and my perspective of usability. One advantage of using two search engines is that One can find Interesting information (trivial or important) on one site that the other fails to display. And I apologize for bad quality of Images. I had to compress them to save load time.
-</p>Header Photo by Steve Johnson from <a href="https://www.pexels.com/photo/person-s-index-finger-977246/">Pexels</a>
+</p>
+<p>Header Photo by Steve Johnson from <a href="https://www.pexels.com/photo/person-s-index-finger-977246/">Pexels</a>
 </p>
