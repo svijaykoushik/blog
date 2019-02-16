@@ -1,2 +1,6 @@
 # Build directory
 _site/*
+
+#Build file
+
+Gemfile.lock
