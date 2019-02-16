@@ -5,6 +5,7 @@ subtitle:   "because they need to reduce the load time of your photos."
 date:       2017-05-10 12:00:00
 author:     "Vijay Koushik"
 keywords:   "data compression, social media, image quality, svijaykoushik, blog, topic of interest"
+description: "I explain how social media apps reduce quality of photos to shorten the download time"
 header-img: "img/post-bg-01.jpg"
 og_type: 	"article"
 comments:   true
