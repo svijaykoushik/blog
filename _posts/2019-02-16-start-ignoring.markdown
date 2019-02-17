@@ -2,6 +2,7 @@
 layout:     post
 title:      "Stop tracking and start ignoring"
 subtitle:   "A tip to delete files from a repository and stop tracking them while keeping them locally"
+description: "Here I share a tip to delete files unwanted & unrelated to the project from a git repository"
 date:       2019-02-17 07:00:00
 author:     "Vijay Koushik"
 keywords:   "git, untrack, files, ignore, folders, remove files, remove folders,  remove cached"
