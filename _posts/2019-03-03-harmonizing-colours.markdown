@@ -142,3 +142,4 @@ I used this algorithm to create a palate and it's not bad for a first attempt. A
 1. Color Theory for Designers: How To Create Your Own Color Schemes - https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/
 2. Picking a Color Palette for Your Game's Artwork - https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174
 3. Color: HSB and tint-tone-shade - https://getpocket.com/a/read/1609347779
+4. HSV color model - https://en.wikipedia.org/wiki/HSL_and_HSV
