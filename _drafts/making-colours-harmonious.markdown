@@ -75,7 +75,46 @@ AND set saturations to equal each other<br/>
 </blockquote>
 </p>
 <h2>Shades, Tints and Tones</h2>
-<p>Now that I learnt to create a custom colour palate, changing the shades, tints and tones is very easy.</p>
-<p>To create different shades of the colour, I would choose a colour with 100% brightness and reduce it by 20 equally. This would create 5 shades of the same colour.</p>
-<p>Similarly, to create different tints, I would choose a colour with 100% saturation and bring the it down by 20 evenly to get 5 separate tints.</p>
-<p>And to create multiple tones, I would again choose a colour with 100% brightness and 100% saturation and reduce them both in counts of 20 to obtain 5 different tones.</p>
+<p>We can extend this algorithm to create shades, tints and tones of a particular hue</p>
+<pre>
+<code>
+// SHADES
+
+SELECT a Colour
+
+Keep the Hue constant
+
+THEN Change the Brightness in equal intervals
+
+AND Keep the Saturation unchanged.
+</code>
+</pre>
+<p>To create different shades of the colour red, I started with Brightness at 100% and reduce it by 12 equally. This would create 8 shades of the colour.</p>
+<pre>
+<code>
+// TINTS
+
+SELECT a Colour
+
+Keep the Hue constant
+
+THEN Change the Saturation in equal intervals
+
+AND Keep the Brightness unchanged.
+</code>
+</pre>
+<p>Similarly, to create different tints, I start with 100% saturation and bring the it down by 12 evenly to get 8 separate tints.</p>
+<pre>
+<code>
+// TONES
+
+SELECT a Colour
+
+Keep the Hue constant
+
+THEN Change the Brightness in equal intervals
+
+AND Change the Saturation with the same interval.
+</code>
+</pre>
+<p>And to create multiple tones, I would again start with 100% brightness and 100% saturation and reduce them both in counts of 12 to obtain 8 different tones.</p>
