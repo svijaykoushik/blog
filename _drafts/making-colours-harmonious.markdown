@@ -89,7 +89,10 @@ THEN Change the Brightness in equal intervals
 AND Keep the Saturation unchanged.
 </code>
 </pre>
-<p>To create different shades of the colour red, I started with Brightness at 100% and reduce it by 12 equally. This would create 8 shades of the colour.</p>
+<p>To create different shades of the colour red, I started with Brightness at 100% and reduce it by 12 equally. This would create 8 shades of the colour.
+<img src="{{site.baseurl}}/img/2019_03_03/shades_of_red.jpg" alt="Different shades of red"/>
+<span class="caption text-muted">Different shades of red</span><br/>
+</p>
 <pre>
 <code>
 // TINTS
@@ -103,7 +106,10 @@ THEN Change the Saturation in equal intervals
 AND Keep the Brightness unchanged.
 </code>
 </pre>
-<p>Similarly, to create different tints, I start with 100% saturation and bring the it down by 12 evenly to get 8 separate tints.</p>
+<p>Similarly, to create different tints, I start with 100% saturation and bring the it down by 12 evenly to get 8 separate tints.
+<img src="{{site.baseurl}}/img/2019_03_03/tints_of_red.jpg" alt="Different tints of red"/>
+<span class="caption text-muted">Different tints of red</span><br/>
+</p>
 <pre>
 <code>
 // TONES
@@ -117,4 +123,20 @@ THEN Change the Brightness in equal intervals
 AND Change the Saturation with the same interval.
 </code>
 </pre>
-<p>And to create multiple tones, I would again start with 100% brightness and 100% saturation and reduce them both in counts of 12 to obtain 8 different tones.</p>
+<p>And to create multiple tones, I would again start with 100% brightness and 100% saturation and reduce them both in counts of 12 to obtain 8 different tones.
+<img src="{{site.baseurl}}/img/2019_03_03/tones_of_red.jpg" alt="Different tones of red"/>
+<span class="caption text-muted">Different tones of red</span><br/>
+</p>
+
+## Conclusion
+
+I used this algorithm to create a palate and it came out pretty at my first attempt itself. This is how I implemented it.
+
+<img src="{{site.baseurl}}/img/2019_03_03/myresult.png" alt="My result after after following the steps to create a color palate"/>
+<span class="caption text-muted">My result after after following the steps to create a color palate</span><br/>
+</p>
+## References
+
+1. Color Theory for Designers: How To Create Your Own Color Schemes - https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/
+2. Picking a Color Palette for Your Game's Artwork - https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174
+3. Color: HSB and tint-tone-shade - https://getpocket.com/a/read/1609347779
