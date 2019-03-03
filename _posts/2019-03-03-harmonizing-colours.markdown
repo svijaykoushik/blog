@@ -4,12 +4,13 @@ title:      "Harmonizing Colours"
 subtitle:   "I found an easy way to create a good colour palate"
 description: "I’ll be sharing here an easy method I found on the internet to create a palate of harmonious colours with the HSV colour model. I’ll also explain the terms Hue, saturation and value based on my understanding as a beginner."
 author:     "Vijay Koushik"
+date:       2019-03-03 09:00:00
 keywords:   "design, colour palate, colour scheme, web design, colour terminology"
 header-img: "img/2019_03_03/post_header.jpeg"
 og_type: 	"article"
 comments:   true
-pageId:     "TBA"
-tags:       ["beginner", "web design", "colour palate"]
+pageId:     "2019-03-03-harmonizing-colours"
+tags:       ["beginner", "web design", "colour palate creation"]
 ---
 <p>Hello world!</p>
 <p>I’ll be sharing here an easy method I found on the internet to create a palate of harmonious colours with the HSV colour model. I’ll also explain the terms Hue, saturation and value based on my understanding as a beginner.</p>
