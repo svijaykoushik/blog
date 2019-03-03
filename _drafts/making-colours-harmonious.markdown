@@ -1,19 +1,19 @@
 ---
 layout:     post
-title:      "Making colours harmonious"
-subtitle:   "TBA"
-description: "TBA"
+title:      "Harmonizing Colours"
+subtitle:   "I found an easy way to create a good colour palate"
+description: "I’ll be sharing here an easy method I found on the internet to create a palate of harmonious colours with the HSV colour model. I’ll also explain the terms Hue, saturation and value based on my understanding as a beginner."
 author:     "Vijay Koushik"
-keywords:   "TBA"
-header-img: "img/2019_02_16/post_header.jpg"
+keywords:   "design, colour palate, colour scheme, web design, colour terminology"
+header-img: "img/2019_03_03/post_header.jpeg"
 og_type: 	"article"
 comments:   true
 pageId:     "TBA"
-tags:       ["TBA"]
+tags:       ["beginner", "web design", "colour palate"]
 ---
 <p>Hello world!</p>
 <p>I’ll be sharing here an easy method I found on the internet to create a palate of harmonious colours with the HSV colour model. I’ll also explain the terms Hue, saturation and value based on my understanding as a beginner.</p>
-<p>Choosing a good palate of colours was always a herculean task for me as I’m new to web designing. The colours would either look unpleasant or straight up hurt my eyes. Thus, I used online colour picking tools like Adobe Kuler and Paletton to create my colour scheme. I decided to stick with choosing from the traditional methods of creating the colour schemes and I refrained from creating a custom palate. But soon my curiosity kicked in and I reading articles on web designing and app designing to find out how others created harmonious custom colour palates.</p>
+<p>Choosing a good palate of colours was always a herculean task for me as I’m new to web designing. The colours would either look unpleasant or straight up hurt my eyes. Thus, I used online colour picking tools like <a href="https://color.adobe.com/">Adobe Kuler</a> and <a href="http://paletton.com/">Paletton</a> to create my colour scheme. I decided to stick with choosing from the traditional methods of creating the colour schemes and I refrained from creating a custom palate. But soon my curiosity kicked in and I started reading articles on web designing and app designing to find out how others created harmonious custom colour palates.</p>
 <h2>Using the HSV/HSB colour model</h2>
 <p>Most articles I read suggested to use the HSV colour model to create custom colour palates because It allows to choose colours as we perceive in real life. But each article defined these terms in a unique way which was confusing to me and took a bit of time to grab the idea. Among those articles <a href="https://tutsplus.com/authors/tyler-seitz">Tyler Seitz's</a> article <a href="https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174">Picking a Color Palette for Your Game's Artwork</a> on tuts-plus stood out because of its easily understandable algorithmic approach in creating custom colour palates using the HSV model.</p>
 <p>According to their article, an appealing colour palate can be created by equalizing two of the components in the HSV model. What is HSV model anyway?<br/>
@@ -29,7 +29,7 @@ It has three components viz
  <blockquote>
  the degree to which a stimulus can be described as similar to or different from stimuli that are described as red, green, blue, and yellow
  </blockquote>
- In other words, hue is how we identify colours in terms of red, blue, green and yellow. For example, we identify Rose, Hibiscus, Apple and tulip as red even though they don’t exactly have the same colour.  and we identify the turquoise gem as greenish-blue colour not green or blue because it appears as a mix of both. This hilarious meme from imgur gives a clear picture ;) of how we perceive hues. 
+ In other words, hue is how we identify colours in terms of red, blue, green and yellow. For example, we identify Rose, Hibiscus, Apple and tulip as red even though they don’t exactly have the same colour.  And we identify the turquoise gem as greenish-blue colour not green or blue because it appears as a mix of both. This hilarious meme from <a href="https://imgur.com/gallery/DxkYG3s">imgur</a> gives a clear picture ;) of how we perceive hues. 
  <img src="{{site.baseurl}}/img/2019_03_03/hue_perception.jpg" alt="Perception of hues"  width="500" height="500"/>
  <span class="caption text-muted">How people perceive hues</span><br/>
  In HSV model, colours of each hue are arranged in a radial fasion and represented as degrees from 0° to 360°. Where Red has a hue value of 0 ° and going counter clockwise at 120° we have green and further at 240° we have blue. Going further we reach Red at 0°.
@@ -49,6 +49,7 @@ Saturation is the intensity of the colour with respect to the brightness of the 
  <span class="caption text-muted">Image to represent green under different brightness</span><br/>
 </p>
 <h2>Algorithm to create a harmonious colour palate</h2>
+<p><strong><em>Note: From this point onwards, I'll be using the term brightness to represent the Value component of HSV model because it's more easy to understand.</em></strong></p>
 <p>I find Tyler Seitz's algorithm easy and efficient in creating a custom colour palate. I’ll just re iterate their algorithm here.
 <blockquote>To create a great colour palette, you need only follow this rule: 
 <pre>
@@ -89,7 +90,7 @@ THEN Change the Brightness in equal intervals
 AND Keep the Saturation unchanged.
 </code>
 </pre>
-<p>To create different shades of the colour red, I started with Brightness at 100% and reduce it by 12 equally. This would create 8 shades of the colour.
+<p>To create different shades of the colour red, I started with Brightness at 100% and reduced it by 12 equally. This would create 8 shades of the colour.
 <img src="{{site.baseurl}}/img/2019_03_03/shades_of_red.jpg" alt="Different shades of red"/>
 <span class="caption text-muted">Different shades of red</span><br/>
 </p>
@@ -130,11 +131,11 @@ AND Change the Saturation with the same interval.
 
 ## Conclusion
 
-I used this algorithm to create a palate and it came out pretty at my first attempt itself. This is how I implemented it.
+I used this algorithm to create a palate and it's not bad for a first attempt. And This is how I implemented it.
 
-<img src="{{site.baseurl}}/img/2019_03_03/myresult.png" alt="My result after after following the steps to create a color palate"/>
+<img src="{{site.baseurl}}/img/2019_03_03/my_result.png" alt="My result after after following the steps to create a color palate"/>
 <span class="caption text-muted">My result after after following the steps to create a color palate</span><br/>
-</p>
+
 ## References
 
 1. Color Theory for Designers: How To Create Your Own Color Schemes - https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/
