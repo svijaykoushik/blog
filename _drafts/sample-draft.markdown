@@ -1,13 +1,8 @@
 ---
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
-
+layout: post
+title:      "Sample post"
+subtitle:   "Know to use markdown syntax"
+description: "A sample post containing syntax for github flavoured markdownn"
 ---
 
 # h1 Heading 8-)

@@ -3,7 +3,6 @@ layout:     post
 title:      "Making colours harmonious"
 subtitle:   "TBA"
 description: "TBA"
-date:       2019-02-17 07:00:00
 author:     "Vijay Koushik"
 keywords:   "TBA"
 header-img: "img/2019_02_16/post_header.jpg"
@@ -12,7 +11,7 @@ comments:   true
 pageId:     "TBA"
 tags:       ["TBA"]
 ---
-<p>Hello world</p>
+<p>Hello world!</p>
 <p>I’ll be sharing here an easy method I found on the internet to create a palate of harmonious colours with the HSV colour model. I’ll also explain the terms Hue, saturation and value based on my understanding as a beginner.</p>
 <p>Choosing a good palate of colours was always a herculean task for me as I’m new to web designing. The colours would either look unpleasant or straight up hurt my eyes. Thus, I used online colour picking tools like Adobe Kuler and Paletton to create my colour scheme. I decided to stick with choosing from the traditional methods of creating the colour schemes and I refrained from creating a custom palate. But soon my curiosity kicked in and I reading articles on web designing and app designing to find out how others created harmonious custom colour palates.</p>
 <h2>Using the HSV/HSB colour model</h2>
@@ -30,40 +29,31 @@ It has three components viz
  <blockquote>
  the degree to which a stimulus can be described as similar to or different from stimuli that are described as red, green, blue, and yellow
  </blockquote>
- In other words, hue is how we identify colours in terms of red, blue, green and yellow. For example, we identify Rose, Hibiscus, Apple and tulip as red even though they don’t exactly have the same colour.  and we identify the turquoise gem as greenish-blue colour not green or blue because it appears as a mix of both. This hilarious meme from imgur gives a clear picture ;) of how we perceive hues.
- <img src="" alt="Perception of hues"/>
- <span class="caption text-muted">Add image here</span><br/>
+ In other words, hue is how we identify colours in terms of red, blue, green and yellow. For example, we identify Rose, Hibiscus, Apple and tulip as red even though they don’t exactly have the same colour.  and we identify the turquoise gem as greenish-blue colour not green or blue because it appears as a mix of both. This hilarious meme from imgur gives a clear picture ;) of how we perceive hues. 
+ <img src="{{site.baseurl}}/img/2019_03_03/hue_perception.jpg" alt="Perception of hues"  width="500" height="500"/>
+ <span class="caption text-muted">How people perceive hues</span><br/>
  In HSV model, colours of each hue are arranged in a radial fasion and represented as degrees from 0° to 360°. Where Red has a hue value of 0 ° and going counter clockwise at 120° we have green and further at 240° we have blue. Going further we reach Red at 0°.
- <img src="" alt="Perception of hues"/>
- <span class="caption text-muted">Add image here</span><br/>
+ <img src="{{site.baseurl}}/img/2019_03_03/color_wheel.png" alt="Colour wheel showing hues radially in a circular fashion" width="500" height="500"/>
+ <span class="caption text-muted">Colour wheel showing hues radially in a circular fashion</span><br/>
 </p>
 <h3>2. Saturation</h3>
 <p>
 Saturation is the intensity of the colour with respect to the brightness of the light source. Saturation determines how vivid or how pale a colour appears in a light source. To put this in perspective, imagine how old clothes look faded when compared to new clothes in our wardrobe. The faded colour has less saturation whereas the vivid colours have high saturation. This image of faded jeans is the best representation for different saturations.
-<img src="" alt="Perception of hues"/>
- <span class="caption text-muted">Add image here</span><br/>
+<img src="{{site.baseurl}}/img/2019_03_03/faded_denim.jpeg" alt="Image to represent different saturation of denim blue with constant brightness" width="600" height="800"/>
+ <span class="caption text-muted">Image to represent different saturation of denim blue with constant brightness</span><br/>
  Sometimes low saturated colours are called muted colours. In HSV model Saturation takes a value between 0% to 100%. Where 0% saturation makes the colour white and 100% saturation has maximum intensity.
 </p>
 <h3>3. Value</h3>
 <p>Value indicates how bright or how dark a colour is. When value component of a colour decreases it becomes darker and darker and eventually becomes black with the lowest brightness. On the other hand, increasing the value component makes the colour brighter. With the highest brightness, the colour is considered to be a pure colour when it’s fully saturated. In the real world, birghtness can be visualized as illuminated and shadow regions of objects in everyday life. The illuminated areas have high brightness and the part of objects in the shadows have low brightness.
-<img src="" alt="Perception of hues"/>
- <span class="caption text-muted">Add image here</span><br/>
+<img src="{{site.baseurl}}/img/2019_03_03/shades_demo.jpg" alt="Image to represent green under different brightness" width="800" height="600"/>
+ <span class="caption text-muted">Image to represent green under different brightness</span><br/>
 </p>
 <h2>Algorithm to create a harmonious colour palate</h2>
 <p>I find Tyler Seitz's algorithm easy and efficient in creating a custom colour palate. I’ll just re iterate their algorithm here.
-<blockquote>To create a great colour palette, you need only follow this rule: </blockquote>
+<blockquote>To create a great colour palette, you need only follow this rule: 
 <pre>
     <code>
-    IF hues do not equal each other<br/>
-
-THEN set saturations to match each other<br/>
-
-AND set brightnesses to match each other<br/>
-   </code>
-</pre>
-<pre>
-    <code>
-    IF hues do not equal each other<br/>
+IF hues do not equal each other<br/>
 
 THEN set saturations to match each other<br/>
 
@@ -82,6 +72,7 @@ THEN set hues to equal each other<br/>
 AND set saturations to equal each other<br/>
    </code>
 </pre>
+</blockquote>
 </p>
 <h2>Shades, Tints and Tones</h2>
 <p>Now that I learnt to create a custom colour palate, changing the shades, tints and tones is very easy.</p>
