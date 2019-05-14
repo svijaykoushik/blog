@@ -30,3 +30,9 @@ END
 ```
 
 Next, I started designing the UI. Initially, I placed only a simple text box in the center of the page for the user to input their queries. It looked so bland, that I stared making some tweaks with CSS and finally ended up cloning the ask helix website. By this time, it was late in the night so I decided this was the final design and everything worked perfectly as I wanted and went to sleep as I had my demo of this assignment the next day.
+
+The Next day, I demoed my program/ web app to my evaluator and explained how it covered the assignment criteria. His reply was... "okay. you can go now". Just okay! nothing else! not even a word after that. I was a bit disappointed because I had high hopes for complements as mine was unique. I know it's a too much to expect complements in a workplace like in school but it was disappointing at that time.
+
+## When the plan goes off the rails, make a new plan
+
+After that experience, I was anxious that I would get the same reaction from you too. So, I started making some changes to the design in hopes that it would be worthy enough to post it here and out of nowhere a question popped in my head "How does `Math.random()` work?". I, like any other dev used the built in random number generator to pick random replies in my app. This question made me curious
