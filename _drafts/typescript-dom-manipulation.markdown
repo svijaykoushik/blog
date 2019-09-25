@@ -20,11 +20,11 @@ I’ve been learning Typescript for a week now. I got into typescript when I wan
 
 ## Configuration
 
-TypeScript has out of the box support for different types required for basic programming needs. But to use the DOM, I needed to configure the typescript compiler to include the *“dom”* library in the compiler options section of the configuration file[2](#References). Did the creators do that on purpose? Why didn’t they include by default? I thought. May be the creators didn't intend to use it this way.
+TypeScript has out of the box support for different types required for basic programming needs. But to use the DOM, I needed to configure the typescript compiler to include the *“dom”* library in the compiler options section of the configuration file<sup>\[[2](#References)\]</sup>. Did the creators do that on purpose? Why didn’t they include by default? I thought. May be the creators didn't intend to use it this way.
 
 Some other configuration changes I made were: I enabled strict mode for strict type checking and I changed the target from common JS to es5, so the compiler can output JS for browsers and not for node.js. I also added *"es2015"* library so that I could use functionalities like arrays and Math functions.
 
-```json
+```javascript
 /**
 * tsconfig.json
 * Configuration file in the project folder for the Typescript compiler
@@ -80,15 +80,15 @@ Then, I opened a new typescript file and added the following code
 
 ``` typescript
 
-let greeter:HTMLHeadingElement = document.getElementById(“greeter”);
+let greeter:HTMLHeadingElement = document.getElementById("greeter");
 
-greeter.innerText = “Hello world!”;
+greeter.innerText = "Hello world!";
 
  ```
 
 ![Typescript type declaration]({{ site.baseurl }}/img/ts-dom/ts-type-declaration.jpg)
 
-In the code, I created a variable greeter and I assigned the type `HTMLHeadingElement`  to it. The `HTMLHeadingElement` type which is defined in the “dom” library we added to the configuration, tells the compiler that the greeter variable expects a html heading element and nothing else. And I assigned the greeter to the value returned by the function `getElementById`  which returns the element with the ID provided. Then I assigned the string “hello world” to the `innerText` property of the greeter element.
+In the code, I created a variable greeter and I assigned the type `HTMLHeadingElement`  to it. The `HTMLHeadingElement` type which is defined in the “dom” library we added to the configuration, tells the compiler that the greeter variable expects a html heading element and nothing else. And, I assigned the greeter to the value returned by the function `getElementById`  which returns the element with the ID provided. Then I assigned the string “hello world” to the `innerText` property of the greeter element.
 
 When I compiled the code with the command
 
@@ -104,29 +104,29 @@ It threw the following error
 >
 > Type 'null' is not assignable to type 'HTMLHeadingElement'.
 
-Bummer! My first attempt failed. On the bright side, Typescript is doing its job and the configurations I set up works. The error means that, I tried to assign greeter which is of type `HTMLHeadingElement` with an object of type `HTMLElement` that the method `getElementById` returned. `HTMLElement | null` in the error message means that the method’s return value can be either of type HTMLElement or null. The special operator `|` is called the union operator. I won’t be explaining about union types in this article. You can learn about them [here](https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types).
+Bummer! My first attempt failed. On the bright side, Typescript is doing its job and the configurations I set up works. The error means that, I tried to assign greeter which is of type `HTMLHeadingElement` with an object of type `HTMLElement` that the method `getElementById` returned. `HTMLElement | null` in the error message means that the method’s return value can be either of type `HTMLElement` or `null`. The special operator `|` is called the union operator. I won’t be explaining about union types in this article. You can learn about them [here](https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types).
 
-`HTMLElement` type is just a common interface for all the html elements[1](#References) but the compiler expects a `HTMLHeadingElement`. I thought of changing the greeter variable’s type to `HTMLElement` but I didn’t. Because, it’s not right. If I had changed it to `HTMLElement`, it means greeter could accept any HTML element from the DOM. I wanted it to accept only a heading element. So, I used *type assertion* feature of typescript (Learn about type assertion [here](https://www.typescriptlang.org/docs/handbook/basic-types.html#type-assertions)) to tell the compiler that the element returned from the getElementById is indeed a heading element and it doesn’t have to worry about it. Here's the fixed code:
+`HTMLElement` type is just a common interface for all the html elements<sup>\[[1](#References)\]</sup> but the compiler expects a `HTMLHeadingElement`. I thought of changing the greeter variable’s type to `HTMLElement` but I didn’t. Because, it’s not right. If I had changed it to `HTMLElement`, it means greeter could accept any HTML element from the DOM. I wanted it to accept only a heading element. So, I used *type assertion* feature of typescript (Learn about type assertion [here](https://www.typescriptlang.org/docs/handbook/basic-types.html#type-assertions)) to tell the compiler that the element returned from the getElementById is indeed a heading element and it doesn’t have to worry about it. Here's the fixed code:
 
 ``` typescript
-let greeter:HTMLHeadingElement = document.getElementById(“greeter”) as HTMLHeadingElement;
+let greeter:HTMLHeadingElement = document.getElementById("greeter") as HTMLHeadingElement;
 
-greeter.innerText = “Hello world!”;
+greeter.innerText = "Hello world!";
 ```
 
 ![Typescript type declaration]({{ site.baseurl }}/img/ts-dom/ts-type-assertion.jpg)
 
 Now, the compilation was a success. I included the script.js file generated by the compiler in the html document and opened it on a browser. It looked like this:
 
-![Typescript type declaration]({{ site.baseurl }}/img/ts-dom/ts-screenshot-no-style.jpg)
+![Typescript type declaration]({{ site.baseurl }}/img/ts-dom/ts-screenshot-no-style.png)
 
 ### Decoration time
 
-Everything worked great and as planned. It was time to decorate the page. I wanted a font style that is not formal looking. and after browsing through google fonts, I liked *Rock Salt*. I imported it in my stylesheet along with *Dancing Script* as a secondary font. I then proceeded with modifying the html document by adding few more elements. I centered everything using flex box, added a nice background from [UI gradients](https://uigradients.com/#CanYouFeelTheLoveTonight)., and made some position adjustments to arrange the elements properly. The page now looked like this:
+Everything worked great and as planned. It was time to decorate the page. I wanted a font style that is not formal looking. After browsing through google fonts, I liked *Rock Salt*. I imported it in my stylesheet along with *Dancing Script* as a secondary font. I then proceeded with modifying the html document by adding few more elements. I centered everything using flex box, added a nice background from [UI gradients](https://uigradients.com/#CanYouFeelTheLoveTonight)., and made some position adjustments to arrange the elements properly. The page now looked like this:
 
-![Typescript type declaration]({{ site.baseurl }}/img/ts-dom/ts-screenshot-bg-and-font.jpg)
+![Typescript type declaration]({{ site.baseurl }}/img/ts-dom/ts-screenshot-bg-and-font.png)
 
-I wanted to add a pretty background animation of orbs rising to the top like bubbles to the page. To make the orbs I decided to use `<div>` elements. Since I wanted several of these orbs with different sizes, I split the task into two so the work could be simplified. One, I created a common style for all the orbs and created a custom animation for the orbs in CSS. And two, I created the orbs dynamically with the help of typescript by creating a set number of div elements, assigning them the style created beforehand and randomizing their sizes, positions and animation delay to make them look more natural.
+I wanted to add a pretty background animation of orbs rising to the top like bubbles to the page. To make the orbs I decided to use `<div>` elements. Since I wanted several of these orbs with different sizes, I split the task into two so the work could be simplified. One, I created a common style for all the orbs and created a custom animation for the orbs in CSS. And two, I created the orbs dynamically with the help of typescript by creating a set number of `<div>` elements, assigning them the style created beforehand and randomizing their sizes, positions and animation delay to make them look more natural.
 
 ```javascript
 .
