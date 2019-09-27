@@ -6,10 +6,10 @@ description: "It's about how to do DOM manipulation in TypeScript and how they a
 header-img: "img/2019_09_27/ts-dom-manipulation-header.jpg"
 author:     "Vijay Koushik"
 keywords:   "Typescript, DOM manipulation, DOM types, Beginners, Tutorial"
-header-img: "img/2019_03_03/post_header.jpeg"
+header-img: "img/2019_09_27/ts-dom-manipulation-header.jpg"
 og_type: 	"article"
 comments:   true
-pageId:     "2019-03-03-harmonizing-colours"
+pageId:     2019-09-27-typescript-dom-manipulation"
 tags:       ["beginner", "typescript", "domTypes", "domManipulation"]
 ---
 
