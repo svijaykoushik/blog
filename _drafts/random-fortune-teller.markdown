@@ -7,32 +7,11 @@ description: "Here I demonstrate a fortune telling app that decides the fortune 
 
 Hello, world!
 
-I wanted to show you a web app that I built during my internship with my previous employer. I made this as part of an assignment as part of an evaluation to accept me as a dev in the organization. The assignment was to make a program that can read an xml file, parse it using DOM methods and show it in HTML.
+How does JavaScript generate random numbers? This popped when I was looking through some of my old code one day. I was intrigued and I googled about it. Well, JavaScript and other programming languages use something called a **Random Number Generator** to generate random numbers. A Random number generator is a device that generates sequences random numbers like a set of dice that you throw while playing board games like Snakes and Ladders or Business (Monopoly). But, computers are too dumb to generate their own random sequence of numbers like a dice throw. So, clever programmers used math to simulate the generation of random numbers. I said "simulate" because, these methods of generation actually reveal a pattern when used for sufficiently longer periods of time.
 
-## The Plan
+## Pseudo Random Generators
 
-I wanted to do something that others in my batch didn't. After thinking for sometime I decided to make a fortune teller program that generates a random reply for a question submitted. The idea was inspired from https://askhelixfossil.com/. I thought it would be fun and started working on it. My plan was to place all the fortunes in an xml file, read it using AJAX, parse it with DOM methods, choose a response from the xml in a random fashion and finally display the response to the user when they interact with the program through the text box available to them.
+Programmers have developed more than 25 different ways to use math to imitate the generation of unpredictable sequence numbers over the past 8 decades. Hence these different ways or algorithms as I'll call here after are aptly called Pseudo Random Number Generator algorithms. Because, they are fake and are completely predictable.
 
-## Execute the plan
+## How do they work?
 
-Now that my plan was clear I started coding the program. It looked something like this
-
-```PseudoCode
-WHEN the user presses 'enter key' DO
-    IF query is NOT empty
-        LOAD the xml from the server
-        PARSE the file to extract the responses
-        SELECT a random response from the list
-        DISPLAY it to the user
-    ELSE
-        do nothing
-END
-```
-
-Next, I started designing the UI. Initially, I placed only a simple text box in the center of the page for the user to input their queries. It looked so bland, that I stared making some tweaks with CSS and finally ended up cloning the ask helix website. By this time, it was late in the night so I decided this was the final design and everything worked perfectly as I wanted and went to sleep as I had my demo of this assignment the next day.
-
-The Next day, I demoed my program/ web app to my evaluator and explained how it covered the assignment criteria. His reply was... "okay. you can go now". Just okay! nothing else! not even a word after that. I was a bit disappointed because I had high hopes for complements as mine was unique. I know it's a too much to expect complements in a workplace like in school but it was disappointing at that time.
-
-## When the plan goes off the rails, make a new plan
-
-After that experience, I was anxious that I would get the same reaction from you too. So, I started making some changes to the design in hopes that it would be worthy enough to post it here and out of nowhere a question popped in my head "How does `Math.random()` work?". I, like any other dev used the built in random number generator to pick random replies in my app. This question made me curious
