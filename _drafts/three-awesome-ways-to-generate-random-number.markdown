@@ -3,7 +3,7 @@ layout: post
 title:      "3 Amazing ways to generate random numbers without Math.random()"
 subtitle:   "A skin deep take on pseudo random number generators"
 description: "An article covering the basics of pseudo random number generators and how to implement three of them in JavaScript"
-header-img: "img/post-bg-01.jpg"
+header-img: "img/prng-in-js/banner_image.jpg"
 author:     "Vijay Koushik"
 keywords:   "Javascript, random number generators, middle square method, Linear congruential generator, Xorshift"
 og_type: 	"article"
@@ -20,7 +20,7 @@ But… How does a computer, a device that is designed to work as per the instruc
 
 A True RNG needs additional hardware that can use real-world random phenomena from throwing dice 🎲 to measuring radiation from a radioactive material as an input to generate random numbers. Wow! Using the randomness in radioactive decay just to generate a number is mind-blowing! 🤯 Take a moment to let that sink in.
 
-But these hardware are costly and who would willingly carry a radioactive material in their pockets except for Lex Luthor? That is why everyone agreed to settle with a PRNG.
+But this additional hardware is costly and who would willingly carry a radioactive material in their pockets except for Lex Luthor? That is why everyone agreed to settle with a PRNG.
 
 PRNG is not a single standard algorithm used everywhere. I was struck dumb when I found out that there are not 1, not 2 but 28 different algorithms created by very smart people over the past 7 decades.
 
@@ -32,7 +32,7 @@ Let me show you 3 amazing ways to replace `Math.random()` in Javascript.
 >
 > *<https://www.geeksforgeeks.org/pseudo-random-number-generator-prng/>*
 
-Though I couldn't research all the 28 algorithms in a short time, I looked up 3 good ones. I first thought they used complex mathematical derivatives involving 100s of lines of code. Nope! I was wrong. With 2 to 5 lines of code involving basic arithmetic operations they’re unbelievably simple. This makes them easier for beginners to understand.
+Though I couldn't research all the 28 algorithms in a short time, I looked up 3 good ones. I first thought they used complex mathematical derivatives involving 100s of lines of code. Nope! I was wrong. With 2 to 5 lines of code involving basic arithmetic operations, they’re unbelievably simple. This makes it easier for beginners to understand.
 
 All 3 algorithms and PRNGs, in general, followed these common steps
 
@@ -52,19 +52,19 @@ A major property that separates PRNGs from true RNGs is that the sequences gener
 
 ## 1. Middle square method (MSM)
 
-Invented by John von Neumann and described in 1946, the Middle Square Method (MSM) is the first ever method designed to generate pseudo random number sequences <sup>[\[1\]](#References)</sup>. Implementing this method is a child’s play. For a n-digit random number sequence,
+Invented by John von Neumann and described in 1946, the Middle Square Method (MSM) is the first-ever method designed to generate pseudo-random number sequences <sup>[\[1\]](#References)</sup>. Implementing this method is a child’s play. For an n-digit random number sequence,
 
-1. Start with a n digit number as the seed. Let's say it’s a 2-digit number 42.
+1. Start with an n digit number as the seed. Let's say it’s a 2-digit number 42.
 
 2. Square it. Here, the square of 42 is 1764.
 
-3. Extract the middle n-digits of the squared number to get the next number in our sequence. In our case the next number would be 76.
+3. Extract the middle n-digits of the squared number to get the next number in our sequence. In our case, the next number would be 76.
 
 4. Use the result as the seed and repeat steps 1-4 for the next cycle.
 
 ![Representation of middle square method]({{ site.baseurl }}/img/prng-in-js/Middle_square_method.jpg) Representation of middle square method
 
-The simple nature of the algorithm is used as an exercise for beginner programmers to check their knowledge in the language they learned in bootcamp.  So, here's my implementation in JS to help them.
+The simple nature of the algorithm is used as an exercise for beginner programmers to check their knowledge in the language they learned in Bootcamp. So, here's my implementation in JS to help them.
 
 ```JavaScript
 /**
@@ -113,11 +113,11 @@ function middleSquareMethod(){
 }
 ```
 
-With just three lines of code, we could generate a maximum of 8n numbers for a n-digit number after which the sequence repeats itself. There is a pitfall though. Some seeds can cause the algorithm to have a shorter cycle like the seed 25 causes it to repeat itself indefinitely.
+With just three lines of code, we could generate a maximum of 8<sup>n</sup> numbers for an n-digit number after which the sequence repeats itself. There is a pitfall though. Some seeds can cause the algorithm to have a shorter cycle like the seed 25, which causes the algorithm to repeat 25 indefinitely.
 
-## 2. The Linear Congruential Generator (LCG) algorithm 
+## 2. The Linear Congruential Generator (LCG) algorithm
 
-This fascinating algorithm uses a more math than the MSM. The LCG uses a linear equation that involves congruence operation for the generation of random sequence of numbers. “Whoa! What's all these fancy terms?” I can hear your exclaiming. Let me explain.
+This fascinating algorithm uses more math than MSM. The LCG uses a linear equation that involves congruence operation for the generation of a random sequence of numbers. “Whoa! What's all these fancy terms?” I can hear you exclaiming. Let me explain.
 
 *Linear means an algebraic equation that has no variables raised to the power greater than one.*
 
@@ -165,30 +165,37 @@ linearCongruentialGenerator(){
 }
 ```
 
-It takes just two lines. Just two! I did a double take after writing it 😲. It’s really incredible to see a simple equation achieve something this big. This just increased my respect for Math.  
+It takes just two lines. Just two! I did a double-take after writing it 😲. It’s really incredible to see a simple equation to achieve something this big. This just increased my respect for Math.
 
 With the right combination of inputs, we could generate a very long sequence. Longer than the MSM before it starts repeating itself. In my example I used the values a = 1664525, m = 232 and c = 1013904223 as used in [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes) <sup>[\[3\]](#References)</sup>.
 
 ## 3. Xorshift algorithm
 
-The third algorithm in the list is Xorshift algorithm. I've saved this special one for the last. If the MSM is easier to understand for humans and the LCG is understandable by both humans and computers then the XOR shift algorithm is easily understandable only to computers. Because this method, as the name suggests, uses the special and rarely used binary operations Xor and bit shift.  
+The third algorithm in the list is the Xorshift algorithm. I've saved this special one for the last. If the MSM is easier to understand for humans and the LCG is understandable by both humans and computers then the XOR shift algorithm is easily understandable only to computers. Because this method, as the name suggests, uses the special and rarely used binary operations Xor and bit shift.  
 
-Please bear with me. This one uses a lot of computer science terms. I chose this one because, I thought I would never get to use those binary operators in my life just like how I thought I could never see Ash Ketchum win the Pokémon league championship.
+Please bear with me. This one uses a lot of computer science terms. I chose this one because I thought I would never get to use those binary operators in my life just like how I thought I could never see Ash Ketchum win the Pokémon league championship.
 
 ![ash wins alola]({{ site.baseurl }}/img/prng-in-js/ash_wins_alola.jpg)
 
-Let me break down the algorithm. Bit shifting works by shifting the bits in the binary number either to the left or right. The result is a completely different number. Here is an example:
+Let me break down the algorithm. Bit shifting works by shifting the bits in the binary number either to the left or right. The result is a completely different number. For 1-bit shift to left, each bit is shifted one place to the left. The empty space is filled with 0 and the shifted out bit is discarded. And for a 5-bit shift to the left, single-bit shift operation is repeated 5 times. Here is an example:
 
 The binary equivalent of 42<sub>10</sub> in a 16-bit representation is 0000000000101010<sub>2</sub>.  
 After shifting 5 bits to the left it becomes 0000010101000000<sub>2</sub> which is the binary equivalent of 1344<sub>10</sub>. 
+
+![Bit shift left]({{ site.baseurl }}/img/prng-in-js/Bitshiftleft_1_bit.jpg) Representation of 1 bit shift left operation in a 8 bit system
+
 And if we shift the binary equivalent of 2524<sub>10</sub> – 0000100111011100<sub>2 5 bits to the right it becomes 0000000001001110<sub>2</sub> which is 78<sub>10</sub> in decimal. The rest of the bits on the right side is discarded.
 
-The bit shift operation as you can see requires only one operand and the result is a completely different number. On the other hand, the Xor operation requires two operands. XOR short for Exclusive OR operation, compares the bits of two binary numbers and sets the bit of the result to 1 only when one of the bits in comparison is 1. Continuing with the previous example the Xor of 42 and 2524 takes place like this:
+![Bit shift right]({{ site.baseurl }}/img/prng-in-js/Bitshiftright_1_bit.jpg) Representation of 1 bit shift right operation in a 8 bit system
+
+The bit shift operation, as you can see, requires only one operand and the result is a completely different number. On the other hand, the Xor operation requires two operands. XOR short for Exclusive OR operation compares the bits of two binary numbers and sets the bit of the result to 1 only when one of the bits in comparison is 1. Continuing with the previous example the Xor of 42 and 2524 takes place like this:
 
 4210       – 0000000000101010<sub>2</sub>
 
 252410 – 0000100111011100<sub>2</sub> 
-XOR -       0000100111110110<sub>2</sub> which is the equivalent of 2550<sub>10</sub>.   
+XOR -       0000100111110110<sub>2</sub> which is the equivalent of 2550<sub>10</sub>.
+
+![xor operation]({{ site.baseurl }}/img/prng-in-js/xor.jpg) Representation of 1 bit shift right xor operation in a 8 bit system
 
 Xor also results in a different number. This algorithm combines the power of these two operations. And, here is my implementation of Xorshift in JavaScript.
 
@@ -211,7 +218,7 @@ function xorShift(){
 }
 ```
 
-This method performs consecutive bits shifts and Xor operations on the seed which creates a random sequence containing both positive and negative numbers. The constants 13, 17 and 5 in the algorithm is from the list of triplets suggested in the paper describing the Xor-shift algorithm <sup>[4](#References)</sup>. This algorithm works directly in binary, the language of the computers, which makes it the faster than the LCG.
+This method performs consecutive bits shifts and Xor operations on the seed which creates a random sequence containing both positive and negative numbers. The constants 13, 17 and 5 in the algorithm is from the list of triplets suggested in the paper describing the Xor-shift algorithm <sup>[4](#References)</sup>. This algorithm works directly in binary, the language of the computers, which makes it faster than the LCG.
 
 If you want only positive numbers, you can take the 2’s complement of the seed if it’s negative before returning the value. This can reduce the performance with the inclusion of a condition.
 
@@ -233,19 +240,29 @@ function xorShift(){
 }
 ```
 
-Computers store the positive and negative numbers (called signed integers) as binary numbers in 2’s complement from. The left most bit (the most significant bit) is reserved to represent the sign of the number. 0 represents a positive (+) sign and 1 stands for negative (-) sign.
+Computers store the positive and negative numbers (called signed integers) as binary numbers in 2’s compliment from. The leftmost bit (the most significant bit) is reserved to represent the sign of the number. 0 represents a positive (+) sign and 1 stands for negative (-) sign.
 
 Do you know what a two’s complement is? Don’t worry I’ll explain.
 
-In 2’s complement, A binary number say 00000000 001011012 (45<sub>10</sub>) is taken and it’s bits are flipped. Meaning, 0s are made to 1s and vice versa. And finally, 1<sub>2</sub> is added to the flipped number.  
+IIn 2’s complement, A binary number say 11111111 11010011 (-45<sub>10</sub>) is taken and its bits are flipped. Meaning, 0s are made to 1s and vice versa. And finally, 1<sub>2</sub> is added to the flipped number.  
 
-00000000 00101101<sub>2 </sub>-> 11111111 11010010<sub>2</sub>+ 1<sub>2 </sub>-> 11111111 11010011<sub>2</sub>(-45<sub>10</sub>)
+>-45<sub>10</sub> ➡ 11111111 11010011<sub>2</sub>
+>
+>*Bit inversion*
+>
+> 00000000 00101100<sub>2</sub>
+>
+>*Add 1*
+>
+> 00000000 00101100<sub>2</sub> + 1<sub>2
+>
+> 00000000 00101101<sub>2</sub> ➡ 45<sub>10</sub>
 
 The reverse happens when 2’s complement of a negative number is taken. Thus, in our algorithm, we always end up with positive numbers.
 
 ## Conclusion
 
-This article is just the tip of the iceberg in the rabbit hole of PRNGs. I wanted to share you the different ways to replace `Math.random()`. All these samples give out whole numbers which is the complete opposite of `Math.random()`.  `Math.random()` spits out random decimal numbers only between 0 and 1. I'll leave the conversion as an exercise to you. You can use ES5 features like generator functions to implement these. If someone does that, please post it on the comments.
+This article is just the tip of the iceberg in the rabbit hole of PRNGs. I wanted to share you the different ways to replace `Math.random()`. All these samples give out whole numbers which is the complete opposite of `Math.random()`.  `Math.random()` spits out random decimal numbers only between 0 and 1. I'll leave the conversion as an exercise to you. You can use ES5 features like generator functions to implement these. If someone does that, please post it in the comments.
 
 Thanks for reading 😊
 
@@ -256,3 +273,5 @@ Thanks for reading 😊
 - <sup>[2][3]</sup> "Linear congruential generator", Wikipedia.
 
 - <sup>[4]</sup> “Xorshift RNGs" [pdf] by Marsaglia, George, The journal of statistical software.
+
+Cover image credit: Image by [PIRO4D](https://pixabay.com/users/PIRO4D-2707530/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2017904) from [Pixabay](https://pixabay.com/users/PIRO4D-2707530/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2017904)
