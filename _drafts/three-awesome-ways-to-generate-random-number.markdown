@@ -22,6 +22,8 @@ A True RNG needs additional hardware that can use real-world random phenomena fr
 
 But this additional hardware is costly and who would willingly carry a radioactive material in their pockets except for Lex Luthor? That is why everyone agreed to settle with a PRNG.
 
+![lex_luthor_with_kryptonite]({{ site.baseurl }}/img/prng-in-js/lex_luthor_with_kryptonite.jpg)
+
 PRNG is not a single standard algorithm used everywhere. I was struck dumb when I found out that there are not 1, not 2 but 28 different algorithms created by very smart people over the past 7 decades.
 
 Let me show you 3 amazing ways to replace `Math.random()` in Javascript.
