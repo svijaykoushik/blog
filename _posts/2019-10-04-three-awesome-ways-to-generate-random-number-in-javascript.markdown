@@ -169,7 +169,7 @@ linearCongruentialGenerator(){
 
 It takes just two lines. Just two! I did a double-take after writing it 😲. It’s really incredible to see a simple equation to achieve something this big. This just increased my respect for Math.
 
-With the right combination of inputs, we could generate a very long sequence. Longer than the MSM before it starts repeating itself. In my example I used the values a = 1664525, m = 232 and c = 1013904223 as used in [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes) <sup>[\[3\]](#References)</sup>.
+With the right combination of inputs, we could generate a very long sequence. Longer than the MSM before it starts repeating itself. In my example I used the values a = 1664525, m = 2<sup>32</sup> and c = 1013904223 as used in [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes) <sup>[\[3\]](#References)</sup>.
 
 ## 3. Xorshift algorithm
 
