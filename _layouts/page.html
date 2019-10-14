@@ -21,15 +21,18 @@ layout: default
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
+            {% comment %}
             {% include adsense.html %}
+            {% endcomment %}
             
 			{{ content }}
 		</div>
 	</div>
 </div>
 
+{% comment %}
 {% include adsense.html %}
+{% endcomment %}
 
 
 <hr>
