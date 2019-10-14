@@ -4,7 +4,7 @@ title:      "My thoughts on TypeScript"
 subtitle:   "A review of typescript after learning it for a week"
 date:       2019-10-14 
 description: "I list out my thoughts on typescript after learning it for a week"
-header-img: "img/2019_10_14/cover_image.jpg"
+header-img: "img/2019_10_14/cover.jpg"
 author:     "Vijay Koushik"
 keywords:   "Typescript, Javascript, Thoughts, review"
 og_type: 	"article"
