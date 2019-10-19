@@ -42,7 +42,7 @@ I modified my previous recipe by transforming the tile layer into the background
 
 3. And a content layer to hold the content of the element.
 
-![Recipe for edge sheen effect](/img/2019_10_19/edge_sheen_efecct.jpg) <span class="caption text-muted">Recipe for edge sheen effect</span>
+![Recipe for edge sheen effect]({{ site.baseurl }}/img/2019_10_19/edge_sheen_efecct.jpg) <span class="caption text-muted">Recipe for edge sheen effect</span>
 
 I arranged all these child layers exactly to the centre of the edge sheen layer with flexbox. I reduced the dimensions of the back colour layer so that the edge sheen layer looked like the border of the back colour layer.
 
