@@ -4,6 +4,13 @@ title:      "Learning TypeScript: Hello world with DOM manipulation"
 subtitle:   "They never mention it in the tutorials"
 description: "It's about how to do DOM manipulation in TypeScript and how they are not available in the language tutorials"
 header-img: "img/2019_09_27/ts-dom-manipulation-header.jpg"
+author:     "Vijay Koushik"
+keywords:   "Typescript, DOM manipulation, DOM types, Beginners, Tutorial"
+header-img: "img/2019_09_27/ts-dom-manipulation-header.jpg"
+og_type: 	"article"
+comments:   true
+pageId:     2019-09-27-typescript-dom-manipulation
+tags:       ["beginner", "typescript", "domTypes", "domManipulation"]
 ---
 
 
@@ -15,8 +22,6 @@ header-img: "img/2019_09_27/ts-dom-manipulation-header.jpg"
 Said  [johnny](https://stackoverflow.com/users/28045/johnny) in a [question](https://stackoverflow.com/questions/43210642/is-typescripts-purpose-to-be-used-for-manipulating-the-dom-like-javascript-is) on stackoverflow.com. A while back I had the same question. Can We Use Typescript to manipulate the DOM?
 
 Hello world!
-
-Hello, world!
 I’ve been learning Typescript for a week now. I got into typescript when I wanted to learn the new Angular. Since it is based on Typescript, I decided to learn Typescript. During learning, I found it odd that none of the learning aids I used included examples of using the language with HTML. Every example I saw in those learning aids and some other tutorials I then looked up involved only node.js. More googling landed me on StackOverflow where johnny, as I mentioned before, had the same question. using this as an opportunity to make a post after almost a year, I’ve made this post, the missing piece of the puzzle, in hopes that it would land first instead of johnny’s question on StackOverflow.
 
 ## Configuration
@@ -180,6 +185,8 @@ function releaseBubbles() {
 Here’s the final output
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tX8P-W_jNjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+And the [link](https://github.com/svijaykoushik/learning-typescript/tree/master/helloworld) to the repo containing the complete code
 
 ## Conclusion
 
