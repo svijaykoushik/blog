@@ -1,0 +1,15 @@
+span.cover-image-credit, span.image-credit {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+span.cover-image-credit{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+span.image-credit{
+    display: block;
+}
