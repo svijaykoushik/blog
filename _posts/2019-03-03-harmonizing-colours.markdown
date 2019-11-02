@@ -11,6 +11,8 @@ og_type: 	"article"
 comments:   true
 pageId:     "2019-03-03-harmonizing-colours"
 tags:       ["beginner", "web design", "colour palate creation"]
+creditCover: true
+creditText: "Image by Steve Johnson from Pexels"
 ---
 <p>Hello world!</p>
 <p>I’ll be sharing here an easy method I found on the internet to create a palate of harmonious colours with the HSV colour model. I’ll also explain the terms Hue, saturation and value based on my understanding as a beginner.</p>

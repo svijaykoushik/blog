@@ -11,6 +11,7 @@ og_type: 	"article"
 comments:   true
 pageId:     2019-09-27-typescript-dom-manipulation
 tags:       ["beginner", "typescript", "domTypes", "domManipulation"]
+creditCover: true
 ---
 
 
