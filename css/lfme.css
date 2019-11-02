@@ -8,8 +8,39 @@ span.cover-image-credit{
     position: absolute;
     bottom: 15px;
     width: 100%;
+    display: block;
 }
 
 span.image-credit{
     display: block;
+}
+
+.text-left-override{
+    text-align: left !important;
+}
+
+/*
+* Edge case
+* Override classes
+* this happens when screen width is less than 375px
+*/
+@media(max-width: 374px){
+    /*
+    * Reducing text size to fit within the nav bar
+    * and to keep the brand text and the toggle button
+    * on the same line.
+    */
+    .navbar-brand{
+        font-size: 16px;
+    }
+
+    /*
+    * Reducing the text size to stop distracting the
+    * reader and to keep the center alignment.
+    */
+    span.cover-image-credit{
+        font-size: 8px;
+        bottom: 8px;
+    }
+
 }
