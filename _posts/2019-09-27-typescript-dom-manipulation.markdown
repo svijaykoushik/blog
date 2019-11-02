@@ -32,7 +32,7 @@ Using the DOM or Dom manipulation in typescript is simple. All I needed to do wa
 
 Some other configuration changes I made were: I enabled `strict` mode for strict type checking and I changed the `target` from "common JS" to "es5", so the compiler can output JS for browsers and not for node.js. I also added the "es2015" library so that I could use functionalities like arrays and Math functions for my example.
 
-```javascript
+{% highlight javascript %}
 /**
 * tsconfig.json
 * Configuration file in the project folder for the Typescript compiler
@@ -47,7 +47,7 @@ Some other configuration changes I made were: I enabled `strict` mode for strict
         "target": "es2015"
     }
 }
-```
+{% endhighlight %}
 
 ## Hello world
 
@@ -56,7 +56,7 @@ I’m not covering DOM events here. I’ll be covering them in another article c
 
 I’ll begin with the basics where I change the inner text value of an existing element. I started by creating an HTML file with a simple html5 boilerplate with a `<h1>` element with id greeter saying “hello” inside the body.
 
-``` html
+{% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,17 +69,17 @@ I’ll begin with the basics where I change the inner text value of an existing 
     <h1 id="greeter">Hello</h1>
 </body>
 </html>
-```
+{% endhighlight %}
 
 Then, I opened a new typescript file and added the following code
 
-``` typescript
+{% highlight typescript %}
 
 let greeter:HTMLHeadingElement = document.getElementById("greeter");
 
 greeter.innerText = "Hello world!";
 
- ```
+ {% endhighlight %}
 
 ![Typescript type declaration]({{ site.baseurl }}/img/2019_09_27/ts-type-declaration.jpg)
 
@@ -103,11 +103,11 @@ Bummer! My first attempt failed. On the bright side, Typescript is doing its job
 
 `HTMLElement` type is just a common interface for all the html elements<sup>\[[1](#References)\]</sup> but the compiler expects a `HTMLHeadingElement`. I thought of changing the greeter variable’s type to `HTMLElement` but I didn’t. Because, it’s not right. If I had changed it to `HTMLElement`, it means greeter could accept any HTML element from the DOM. I wanted it to accept only a heading element. So, I used *type assertion* feature of typescript (Learn about type assertion [here](https://www.typescriptlang.org/docs/handbook/basic-types.html#type-assertions)) to tell the compiler that the element returned from the getElementById is indeed a heading element and it doesn’t have to worry about it. Here's the fixed code:
 
-``` typescript
+{% highlight typescript %}
 let greeter:HTMLHeadingElement = document.getElementById("greeter") as HTMLHeadingElement;
 
 greeter.innerText = "Hello world!";
-```
+{% endhighlight %}
 
 ![Typescript type declaration]({{ site.baseurl }}/img/2019_09_27/ts-type-assertion.jpg)
 
@@ -123,7 +123,7 @@ Now that I've made sure that everything works as intended, It was time to decora
 
 Next, to place the cherry on top, I wanted to add a pretty background animation of orbs rising to the top like bubbles to the page. To make the orbs I decided to use `<div>` elements. Since I wanted several of these orbs with different sizes, I split the task into two so the work could be simplified. One, I created a common style for all the orbs and created a custom animation for the orbs in CSS. And two, I created the orbs dynamically with the help of typescript by creating a set number of `<div>` elements, assigning them the style created beforehand and randomizing their sizes, positions, and animation-delay to make them look more natural.
 
-```javascript
+{% highlight typescript %}
 .
 .
 .
@@ -157,11 +157,11 @@ function createBubbles() {
 .
 .
 .
-```
+{% endhighlight %}
 
 Finally, I added the orbs to the dom like this and thereby kickstarting the animation
 
-```javascript
+{% highlight typescript %}
 .
 .
 .
@@ -181,11 +181,12 @@ function releaseBubbles() {
 .
 .
 .
-```
+{% endhighlight %}
 
 Here’s the final output
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tX8P-W_jNjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="image-credit text-muted">Demo: DOM manipulation with Typescript, &copy; Vijaykoushik, 2019</span>
 
 And the [link](https://github.com/svijaykoushik/learning-typescript/tree/master/helloworld) to the repo containing the complete code
 
