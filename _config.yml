@@ -1,9 +1,7 @@
 # Site settings
-title: "Vijaykoushik's blog"
+title: "Learn from my experience"
 header-img: img/home-bg.jpg
 email: svijaykoushik@hotmail.com
-copyright_name: Vijaykoushik, S
-copyright_start_year: 2017
 description: "My experiences with computers, the problems I faced and the fun I had with them and sometimes the topics that interest me find a place in this blog"
 keywords: "Computers, electronics, personal experiences, technology, blog"
 baseurl: "/blog"

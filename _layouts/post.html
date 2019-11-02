@@ -3,7 +3,8 @@ layout: default
 ---
 <article>
     <!-- Post Header -->
-    <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <header class="intro-header"
+        style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -14,6 +15,15 @@ layout: default
                         {% endif %}
                         <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{%
                             endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                        {% if page.creditCover %}
+                        <span class="cover-image-credit">
+                            {% if page.creditText%}
+                            {{ page.creditText }}
+                            {% else %}
+                            &copy; {{ page.date | date: "%Y" }} {{ site.title }}
+                            {% endif %}
+                        </span>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -41,9 +51,12 @@ layout: default
                 {{ content }}
 
                 <p>
-                    <div class="fb-share-button" data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-                        data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore"
-                            target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsvijaykoushik.github.io%2Fblog%2F&amp;src=sdkpreparse">Share</a></div>
+                    <div class="fb-share-button"
+                        data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+                        data-layout="button_count" data-size="small" data-mobile-iframe="false"><a
+                            class="fb-xfbml-parse-ignore" target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsvijaykoushik.github.io%2Fblog%2F&amp;src=sdkpreparse">Share</a>
+                    </div>
                     <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a>
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <!-- Gplus share -->
@@ -55,8 +68,9 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
-                            data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+                            data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous
+                            Post</a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}

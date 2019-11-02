@@ -11,6 +11,8 @@ og_type: 	"article"
 comments:   true
 pageId:     2019-10-14-my-thoughts-on-typescript
 tags:       ["typescript", "javascript", "thoughts", "beginners"]
+creditCover: true
+creditText: "Image by Pixabay from Pexels"
 ---
 
 When I was a child, I used to play construction with my Dad’s music cassette collection. Sometimes, I would mix up the cases and the cassettes inside for fun. When my Dad wanted to listen to the music he liked, he would be disturbed when a completely different song play. And he would be frustrated when he couldn’t find the real one.  

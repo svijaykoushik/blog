@@ -11,6 +11,8 @@ og_type: 	"article"
 comments:   true
 pageId:     "2019-02-16-start-ignoring"
 tags:       ["git", "untrack files", "remove files", "remove folders","remove cached"]
+creditCover: true
+creditText: "Image by composita from Pixabay"
 ---
 
 <p>Hello world,</p>

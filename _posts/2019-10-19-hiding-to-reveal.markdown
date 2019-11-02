@@ -60,6 +60,7 @@ To enjoy the beauty of the "edge sheen" effect, multiple interactive elements ne
 Mobile users, if you cannot experience the effect then watch this video demo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yC1I0LOoiSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="image-credit text-muted">Demo: edge sheen effect (Reveal highlight effect), &copy; Vijaykoushik, 2019</span>
 
 Photo by [Alex Hussein](https://www.pexels.com/@alex-hussein-1391461?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/man-and-woman-standing-on-seashore-2685039/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
