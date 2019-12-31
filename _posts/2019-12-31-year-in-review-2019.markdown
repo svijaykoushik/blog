@@ -1,0 +1,60 @@
+---
+layout:     post
+title:      "2019 Year in review"
+date:       2019-12-31 13:00:00
+author:     "Vijay Koushik"
+keywords:   "year in review, review, 2019, yearly review, rewind, 2019 rewind"
+description: "I review the things I did in My blog on the year 2019"
+header-img: "img/2019_12_31/cover_image.jpg"
+og_type: 	"article"
+comments:   true
+pageId:     "2019-12-31-year-in-review-2019"
+tags:       ["meta"]
+creditCover: true
+creditText: "Photo by Aidan Roof from Pexels"
+---
+
+2019 is a special year to me. It’s the year when I realized how much I love to write. It’s the year where you and the community on DEV.to drowned me with your love which made me start posting consistently after going silent for more than 6 months. As a roundup, I’m sharing you my experiences throughout this year. Don’t worry, It’s not that long.
+
+## Achievements
+
+- One of the greatest achievements this year is that I was selected as one of the TOP 500 authors on DEV 
+- One of my posts was featured in the top 7 posts of the week list
+- And Finally, I posted consecutively for 4 weeks.
+
+## Life lessons
+
+### 1. A picture is worth a thousand words
+
+The saying “A picture is worth a thousand words” is very true. I know everyone knows that. But hear it from me. I learnt that you the reader prioritize and value a picture breaking down a git command explaining every part of it more than the paragraph that followed it explaining the same.
+
+### 2. Read a book
+
+This is the most useful piece of advice from the community. Reading a good book when learning a new tool or a programming language helps you gain a deeper understanding of what you learn. This cannot be said to tutorials and guides because most of them are designed to be very short and specific. Thus, they cannot cover the smaller details that strengthen your foundation. One example is when I was learning git via tutorials, A tutorial taught me very clearly how to add files to a repository but it did not cover how to remove an unwanted file I accidentally added. If you can’t afford a book, just read the manual of whatever you’re learning clearly.
+
+### 3.Keep it simple stupid
+
+The one thing I learnt from the DEV community is that not every developer has a background in computer science. So, keeping my posts simple and by avoiding jargons or simplifying the jargons has been beneficial for the readers. I personally believe that if I can’t explain something in simple terms then I don’t understand it clearly.
+
+## Technical Knowledge
+
+On the technical side, I learnt several things this year.
+
+### 1. Git
+
+I properly learnt to use git. I learnt about branching and workflows which is very helpful in writing my blog as it is hosted on GitHub pages. The GitHub workflow and branching helped write articles and push them without disturbing the live content of my blog. I also figured that using the command line is way easier and faster than using GUI clients like GitHub desktop.
+
+### 2. Colour theory
+
+I made the first step in learning UI design by learning colour theory. Choosing the right colours was usually hard. I would just use the RGB colour picker to pick random colours for a colour scheme and it would just hurt my eyes. After learning about the colour wheel and about the monochrome, complementary, and triadic colour schemes, I now choose colours better and they are very pleasing to the eyes when compared to what I did before.
+
+### 3. Pseudorandom number generators (PRNGs)
+
+I learnt how Math.random works and about PRNGS. What was amazing was the PRNG algorithms used not more than 10 lines of code and very basic math principles to generate a sequence of numbers that are seemingly random. The mind-blowing fact is that Math.random does not use any standard algorithm. It is decided by the browser vendors.
+
+### 4. Typescript
+
+I learnt typescript, the language that I’ve been seeing in various blog posts. It turned-out that It’s not a new language and It, in my opinion, is just well-groomed JavaScript. I got very excited to know that I could use high-level OOP concepts that I learnt in languages like c++, java and C# in JS apps using typescript. The most favourites were “call signatures” and “interfaces”. TS just cured my anxiety on type errors within my app that is just laborious to fix.
+
+I would like to thank you for your love and support and I wish you a very happy new year.
+![New year wishes]({{ site.baseurl }}/img/2019_12_31/newyearwishes.jpg) <span class="caption text-muted">Happy new year</span>
