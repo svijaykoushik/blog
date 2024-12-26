@@ -4,9 +4,9 @@ title:      "The Slow Decline of My English Skills"
 subtitle:   "A Journey with ChatGPT"
 description: "I relied on ChatGPT to improve my English, but it backfired. This is the story of how AI made my language skills worse—and how I'm fighting to reclaim them."
 author:     "Vijay Koushik"
-date:       2019-03-03 09:00:00
-keywords:   "design, colour palate, colour scheme, web design, colour terminology"
-header-img: "img/post_header.jpeg"
+date:       2024-12-26 09:00:00
+keywords:   "ChatGPT, Over-reliance on technology, Digital dependency, Writing skills, Self-improvement"
+header-img: "img/2024_12_26/post_header.jpg"
 og_type: 	"article"
 comments:   true
 pageId:     "2024-12-26-the-slow-decline-of-my-english-skills"
